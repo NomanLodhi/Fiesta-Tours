@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Fiesta Tours</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pacifico&family=Poiret+One&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <style>
+        .brand{
+            font-family: 'Itim', cursive;
+font-family: 'Pacifico', cursive;
+        }
+        .font-change{
+            font-family: 'Itim', cursive;
+font-family: 'Pacifico', cursive;
+        }
+         @media(max-width:10000px) and (min-width:1000px) {
+             .nav-side{
+                position: absolute;
+                right: 100px;
+            }
+        } 
+  .beach-bg{
+    background: url(./Beach\ background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .sec-3-font{
+    font-family: 'Poiret One', cursive;
+  }
+  .cursor-pointer:hover{
+cursor: pointer;
+color: blue;
+  }
+  .vacation-bg{
+background: url(./vacation\ background.jpg);
+background-attachment: fixed;
+background-size: cover;
+  }
+  .row-opacity-25{
+    background-color: rgba(40, 40, 233, 0.551)
+  }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top " >
+        <div class="container-fluid position-relative">
+          <a class="navbar-brand brand fs-1 text-warning p-2" href="#">Fiesta Tours</a>
+          <button class="navbar-toggler fw-bold text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+           MENU <i class="bi bi-list text-light"></i>
+          </button>
+          <div class="collapse navbar-collapse w-100 px-3 position-relative" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-side nav-underline  " style="--bs-scroll-height: 100px;">
+              <li class="nav-item px-3 pb-0 ">
+                <a class="nav-link  text-light fs-5 p-6" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item px-3 pb-0">
+                <a class="nav-link  text-light fs-5" aria-current="page" href="">About</a>
+              </li>
+              <li class="nav-item px-3 pb-0">
+                <a class="nav-link  text-light fs-5" aria-current="page" href="">Contact</a>
+              </li>
+              <li class="nav-item px-3 pb-0">
+                <a class="nav-link  text-light fs-5" aria-current="page" href="">Avenues</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+              <!-- Section -->
+              <div class="container-fluid beach-bg d-flex flex-column justify-content-center text-center align-items-center w-100 p-5 text-light h-100 "><h1 class="display-6 font-change m-lg-5">Welcome to our visiting website!</h1>
+                <h1 class="display-1 fw-bolder">IT'S NICE TO MEET YOU</h1>
+                <button type="button" class="btn btn-warning fs-1 text-light rounded-3 m-lg-5"
+                style="--bs-btn-padding-y:10px; --bs-btn-padding-x: 20px;">
+          TELL US MORE
+        </button>
+            </div>
+     <!-- Form -->
+     <div class="container d-flex justify-content-center flex-column">
+      <!-- Tablist -->
+        <ul class="nav nav-tabs m-2" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active rounded-0" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-airplane"></i> Flight</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-building"></i> Hotel</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link rounded-0" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i class="bi bi-car-front"></i> Cars</button>
+            </li>
+           
+           
+          </ul>
+          <!-- Flight Tab -->
+          <div class="tab-content p-4 border-primary border-bottom border-4" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><form class="row gy-2 gx-3 align-items-center">
+                <form class="row gy-2 gx-3 align-items-center">
+             
+                <div class="col-auto">
+                  <label class="p-2 fw-bold" for="autoSizingSelect">Flying from :</label>
+                  <select class="form-select col-auto fs-6 rounded-0" id="autoSizingSelect">
+                    <option selected>Choose city or country</option>
+                    <option value="1">Canada</option>
+                    <option value="2">Singapore</option>
+                    <option value="3">Thailand</option>
+                    <option value="4">USA</option>
+                    <option value="5">UK</option>
+                    <option value="6">UAE</option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                  <label class="p-2 fw-bold" for="autoSizingSelect">To :</label>
+                  <select class="form-select col-auto fs-6 rounded-0 " id="autoSizingSelect">
+                    <option selected>Choose city or country</option>
+                    <option value="1">Canada</option>
+                    <option value="2">Singapore</option>
+                    <option value="3">Thailand</option>
+                    <option value="4">USA</option>
+                    <option value="5">UK</option>
+                    <option value="6">UAE</option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                    <label class="p-2 fw-bold " for="autoSizingInput">Departing:</label>
+                    <input type="date" class="form-control rounded-0" id="autoSizingInput" >
+                  </div>
+                  <div class="col-auto">
+                    <label class="p-2 fw-bold " for="autoSizingSelect">Adults :</label>
+                    <select class="form-select col-auto fs-6 rounded-0 " id="autoSizingSelect">
+                      <option selected>1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                      <option value="8">9</option>
+                      <option value="9">10</option>
+                     
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <label class="p-2 fw-bold" for="autoSizingSelect">Child :</label>
+                    <select class="form-select col-auto fs-6 rounded-0 " id="autoSizingSelect">
+                      <option selected>1</option>
+                      <option value="1">2</option>
+                      <option value="2">3</option>
+                      <option value="3">4</option>
+                      <option value="4">5</option>
+                      <option value="5">6</option>
+                      <option value="6">7</option>
+                      <option value="7">8</option>
+                      <option value="8">9</option>
+                      <option value="9">10</option>
+                     
+                    </select>
+                  </div>
+              
+                <div class="col-auto ">
+                  <button type="submit" class="btn btn-danger mt-5 ms-4 rounded-0 px-5 ">Search</button>
+                </div>
+              </form></div>
+              <!-- Hotels tab -->
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">    <form class="row gy-2 gx-3 align-items-center">
+                <form class="row gy-2 gx-3 align-items-center">
+                <div class="col-auto">
+                  <label class="p-2 fw-bold" for="autoSizingSelect">City or Hotel name :</label>
+                  <select class="form-select col-auto fs-6 rounded-0" id="autoSizingSelect">
+                    <option selected>Enter a destination or hotel name</option>
+                    <option value="1">Canada</option>
+                    <option value="2">Singapore</option>
+                    <option value="3">Thailand</option>
+                    <option value="4">USA</option>
+                    <option value="5">UK</option>
+                    <option value="6">UAE</option>
+                  </select>
+                </div>
+               
+                <div class="col-auto">
+                    <label class="p-2 fw-bold " for="autoSizingInput">Check-In:</label>
+                    <input type="date" class="form-control rounded-0" id="autoSizingInput" >
+                  </div>
+                <div class="col-auto">
+                    <label class="p-2 fw-bold " for="autoSizingInput">Check-Out:</label>
+                    <input type="date" class="form-control rounded-0" id="autoSizingInput" >
+                  </div>
+                  <div class="col-auto">
+                    <label class="p-2 fw-bold " for="autoSizingSelect">Adults :</label>
+                    <select class="form-select col-auto fs-6 rounded-0 " id="autoSizingSelect">
+                      <option selected>Room for 1 adult</option>
+                      <option value="1">Room for 2 adult</option>
+                      <option value="2">Room for 3 adult</option>
+                      <option value="3">Room for 4 adult</option>
+                      <option value="4">Room for 5 adult</option>
+                      <option value="5">Room for 6 adult</option>
+                      <option value="6">Room for 7 adult</option>
+                      <option value="7">Room for 8 adult</option>
+                      <option value="8">Room for 9 adult</option>
+                      <option value="9">Room for 10 adult</option>
+                     
+                    </select>
+                  </div>
+                 
+              
+                <div class="col-auto ">
+                  <button type="submit" class="btn btn-danger mt-5 ms-4 rounded-0 px-5 ">Search</button>
+                </div>
+              </form>
+            </div>
+            <!-- Cars Tab -->
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">    <form class="row gy-2 gx-3 align-items-center">
+                <form class="row gy-2 gx-3 align-items-center">
+                <div class="col-auto">
+                  <label class="p-2 fw-bold" for="autoSizingSelect">Country :</label>
+                  <select class="form-select col-auto fs-6 rounded-0" id="autoSizingSelect">
+                    <option selected>Please select</option>
+                    <option value="1">Canada</option>
+                    <option value="2">Singapore</option>
+                    <option value="3">Thailand</option>
+                    <option value="4">USA</option>
+                    <option value="5">UK</option>
+                    <option value="6">UAE</option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                  <label class="p-2 fw-bold" for="autoSizingSelect">City :</label>
+                  <select class="form-select col-auto fs-6 rounded-0" id="autoSizingSelect">
+                    <option selected>Please select</option>
+                    <option value="1">Canada</option>
+                    <option value="2">Singapore</option>
+                    <option value="3">Thailand</option>
+                    <option value="4">USA</option>
+                    <option value="5">UK</option>
+                    <option value="6">UAE</option>
+                  </select>
+                </div>
+                <div class="col-auto">
+                  <label class="p-2 fw-bold" for="autoSizingSelect">Location :</label>
+                  <select class="form-select col-auto fs-6 rounded-0" id="autoSizingSelect">
+                    <option selected>Please select</option>
+                    <option value="1">Canada</option>
+                    <option value="2">Singapore</option>
+                    <option value="3">Thailand</option>
+                    <option value="4">USA</option>
+                    <option value="5">UK</option>
+                    <option value="6">UAE</option>
+                  </select>
+                </div>
+               
+                <div class="col-auto">
+                    <label class="p-2 fw-bold " for="autoSizingInput">Pick-Up Date:</label>
+                    <input type="date" class="form-control rounded-0" id="autoSizingInput" >
+                  </div>
+                <div class="col-auto">
+                    <label class="p-2 fw-bold " for="autoSizingInput">Drop-Off Date:</label>
+                    <input type="date" class="form-control rounded-0" id="autoSizingInput" >
+                  </div>
+                
+                 
+              
+                <div class="col-auto ">
+                  <button type="submit" class="btn btn-danger mt-5 ms-4 rounded-0 px-5 ">Search</button>
+                </div>
+              </form>
+            </div>
+            </div>
+          </div> 
+    </div>
+            <!--Why we are best section-->
+                 <div class="container-fluid d-flex flex-column align-items-center justify-content-center sec-3-font py-4">
+                  <h1 class="h1 display-4 p-4 fw-bold">WHY WE ARE THE BEST ?</h1>
+                  <p class="p-2 text-center fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eum voluptas minus alias, sunt ut quod temporibus fuga itaque perferendis blandim?</p>
+                  <div class="row grid align-items-center justify-content-center  column-gap-3 row-gap-3" >
+                    <!-- col-1 -->
+                    <div class="col-auto ">
+                      <div class="card cursor-pointer rounded-0" style="width: 18rem;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <i class="bi bi-airplane-engines-fill fs-1 "></i>
+                          <h5 class="card-title fw-bold">Amazing Travel</h5>
+                          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sit amet iusto iure voluptas facilis veritatis quidem maxime, magni enim, non in ipsam autem itaque. Nemo vero nobis placeat eaque.</p>
+                          <a href="#" class="btn btn-transparent border border-primary rounded-0">Read more <i class="bi bi-arrow-right-circle-fill text-primary"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-2 -->
+                    <div class="col-auto ">
+                      <div class="card cursor-pointer rounded-0" style="width: 18rem;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <i class="bi bi-binoculars fs-1 "></i>
+                          <h5 class="card-title fw-bold">Discover</h5>
+                          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sit amet iusto iure voluptas facilis veritatis quidem maxime, magni enim, non in ipsam autem itaque. Nemo vero nobis placeat eaque.</p>
+                          <a href="#" class="btn btn-transparent border border-primary rounded-0">Read more <i class="bi bi-arrow-right-circle-fill text-primary"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-3 -->
+                    <div class="col-auto">
+                      <div class="card cursor-pointer rounded-0" style="width: 18rem;">
+                        <div class="card-body  d-flex flex-column align-items-center justify-content-center">
+                          <i class="bi bi-flag-fill fs-1 "></i>
+                          <h5 class="card-title fw-bold">Book Your Trip </h5>
+                          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sit amet iusto iure voluptas facilis veritatis quidem maxime, magni enim, non in ipsam autem itaque. Nemo vero nobis placeat eaque.</p>
+                          <a href="#" class="btn btn-transparent border border-primary rounded-0">Read more <i class="bi bi-arrow-right-circle-fill text-primary"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-4 -->
+                    <div class="col-auto">
+                      <div class="card rounded-0 cursor-pointer" style="width: 18rem;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <i class="bi bi-chat-fill fs-1 "></i>
+                          <h5 class="card-title fw-bold">Nice Support</h5>
+                          <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sit amet iusto iure voluptas facilis veritatis quidem maxime, magni enim, non in ipsam autem itaque. Nemo vero nobis placeat eaque.</p>
+                          <a href="#" class="btn btn-transparent border border-primary rounded-0">Read more <i class="bi bi-arrow-right-circle-fill text-primary"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+              <!-- Vacation Section -->
+                <div class="container-fluid vacation-bg position-relative ">
+                  <div class="row  row-opacity-25">
+                    <div class="col-lg-8 d-flex flex-column">
+                      <h1 class="display-4 p-2 fw-bold text-light">Caucasus Vacation Packages</h1>
+                      <p class="fs-5 p-2 text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis culpa nisi exercitationem eius eveniet sit nobis quaerat, ipsum at. Inventore dignissimos animi error nihil velit! Facere nemo ducimus facilis ad!</p>
+                      <p class="text-warning fs-4">From Karachi (Pakistan) <span class="fw-bolder fs-3 text-light">$ 159.00</span> person</p>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                      <button type="button" class="btn btn-danger btn-lg rounded-0 px-5 fw-bold m-2">DETAILS</button>
+                    </div>
+                  </div>
+                </div>
+        <div class="container-fluid d-flex flex-column align-items-center justify-content-center">
+          <h1 class="h1 display-5 fw-bold p-4">POPULAR CRUISES</h1>
+          <p class="p-2 text-center fs-5 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magnam ab facilis odit officiis sunt facere, quis, placeat ratione tempore, ea non amet tenetur iure obcaecati pariatur totam aut culpa.</p>
+          <!-- Slider -->
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <!-- slide-1 -->
+              <div class="carousel-item active overfow-hidden">
+               <div class="row grid align-items-center justify-content-center row-gap-3">
+                <!-- card1 -->
+                <div class="col-lg-4 col-auto">
+                  <div class="card rounded-0 " style="width: 18rem;">
+                    <img src="./card 1.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body ">
+                      <h5 class="card-title text-muted  ">BAHAMAS</h5>
+                      <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ut.</p>
+                      <div class="d-flex flex-column align-items-end">
+                      <a href="#" class="btn btn-warning text-light fw-bold rounded-0  ">SEE ALL</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card2 -->
+
+                <div class="col-lg-4 col-auto">
+                  <div class="card rounded-0" style="width: 18rem;">
+                    <img src="./card 2.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-muted">MEDITERRIAN</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, illum.</p>
+                      <div class="d-flex flex-column align-items-end">
+                      <a href="#" class="btn btn-warning fw-bold text-light rounded-0">SEE ALL</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card3 -->
+
+                <div class="col-lg-4 col-auto">
+                  <div class="card rounded-0 " style="width: 18rem;">
+                    <img src="./card 3.jpg" class="card-img-top rounded-0" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-muted">GREECE</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, delectus!</p>
+                      <div class="d-flex flex-column align-items-end">
+                      <a href="#" class="btn btn-warning rounded-0 text-light fw-bold">SEE ALL</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+              <!-- slide-2 -->
+              <div class="carousel-item">
+                <div class="row grid align-items-center justify-content-center  row-gap-3">
+                  <!-- card1 -->
+                  <div class="col-lg-4 col-auto">
+                    <div class="card rounded-0" style="width: 18rem;">
+                      <img src="./card 4.jpg" class="card-img-top rounded-0" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted">KERELA</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, tempora.</p>
+                        <div class="d-flex flex-column align-items-end">
+                        <a href="#" class="btn btn-warning fw-bold text-light rounded-0 ">SEE ALL</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card2 -->
+  
+                  <div class="col-lg-4 col-auto">
+                    <div class="card rounded-0 " style="width: 18rem;">
+                      <img src="./card 5.jpg" class="card-img-top rounded-0" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted">THAILAND</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, quam.</p>
+                        <div class="d-flex flex-column align-items-end">
+                        <a href="#" class="btn btn-warning fw-bold text-light rounded-0">SEE ALL</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card3 -->
+  
+                  <div class="col-lg-4 col-auto">
+                    <div class="card rounded-0" style="width: 18rem;">
+                      <img src="./card 1.jpg" class="card-img-top rounded-0" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted">INDONESIA</h5>
+                        <p class="card-text text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, dolores.</p>
+                        <div class="d-flex flex-column align-items-end">
+                        <a href="#" class="btn btn-warning rounded-0 text-light fw-bold">SEE  ALL</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+              <!-- slide-3 -->
+              <div class="carousel-item">
+                <div class="row grid align-items-center justify-content-center row-gap-3">
+                  <!-- card1 -->
+                  <div class="col-lg-4 col-auto">
+                    <div class="card rounded-0 " style="width: 18rem;">
+                      <img src="./card 2.jpg" class="card-img-top rounded-0" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted">SPAIN</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, distinctio.</p>
+                        <div class="d-flex flex-column align-items-end">
+                        <a href="#" class="btn btn-warning rounded-0 text-light fw-bold">SEE ALL</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card2 -->
+  
+                  <div class="col-lg-4 col-auto">
+                    <div class="card rounded-0" style="width: 18rem;">
+                      <img src="./card 3.jpg" class="card-img-top rounded-0" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted">TOKYO</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, asperiores?</p>
+                        <div class="d-flex flex-column align-items-end">
+                        <a href="#" class="btn btn-warning rounded-0 text-light fw-bold ">SEE ALL</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- card3 -->
+  
+                  <div class="col-lg-4 col-auto">
+                    <div class="card rounded-0" style="width: 18rem;">
+                      <img src="./card 4.jpg" class="card-img-top rounded-0" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-muted">BEIJING</h5>
+                        <p class="card-text text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est.</p>
+                        <div class="d-flex flex-column align-items-end">
+                        <a href="#" class="btn btn-warning rounded-0 fw-bold text-light">SEE ALL</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+            <!-- FOOTER -->
+            <div class="container-fluid bg-dark p-4 mt-4">
+              <div class="row grid align-items-center justify-content-center">
+                <div class="col-auto ">
+                  <div class="card cursor-pointer rounded-0 bg-dark text-light border-0" style="width: 18rem;">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                      
+                      <h5 class="h3 text-warning font-change">Fiesta Tours</h5>
+                      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sit amet iusto iure voluptas facilis veritatis quidem maxime, magni enim, non in ipsam autem itaque. Nemo vero nobis placeat eaque.</p>
+                      <a href="#" class="btn btn-transparent rounded-0 text-light">Read more <i class="bi bi-arrow-right-circle-fill text-light"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <ul class="list-group list-group-flush ">
+                    <h5 class="text-light fw-bold fs-3">Travel Specialist </h5>
+                    <li class="list-group-item bg-dark text-light">Amazing Cruises <i class="bi bi-arrow-right-circle-fill text-light position-absolute end-0"></i></li>
+                    <li class="list-group-item bg-dark text-light">Affordable Packages <i class="bi bi-arrow-right-circle-fill text-light position-absolute end-0"></i></li>
+                    <li class="list-group-item bg-dark text-light">Great Memories <i class="bi bi-arrow-right-circle-fill text-light position-absolute end-0"></i></li>
+                    <li class="list-group-item bg-dark text-light">Booking <i class="bi bi-arrow-right-circle-fill text-light position-absolute end-0"></i></li>
+                    <li class="list-group-item bg-dark text-light">First Class Flights<i class="bi bi-arrow-right-circle-fill text-light position-absolute end-0"></i></li>
+                  </ul>
+                  </div>
+                <div class="col-auto">
+                  <ul class="list-group list-group-flush p-4 ">
+                    <h5 class="text-light fw-bold fs-3">NewsLetter </h5>
+                    <li class="bg-dark text-light fs-6 py-2" style="list-style: none;">Inspiration,Ideas news & feedback </li>
+                    
+                    <li class="bg-dark text-light py-2 " style="list-style: none;"><input type="text" class="form-control rounded-0 " placeholder="E-mail Address" aria-label="First name"> </li>
+                    <li class="bg-dark text-light py-2" style="list-style: none;"><button type="button" class="btn btn-danger rounded-0 fw-bold">Submit</button> </li>
+                    <li class="bg-dark  py-2 text-success fs-3" style="list-style: none;">+92-09876543-21</li>
+                  </ul>
+                  </div>
+                  
+             </div>
+           </div>
+         
+         </div>
+         <div class="container-fluid d-flex  align-items-center justify-content-center text-center bg-dark text-light p-4">
+All Copyright &copy; Reserved By  <a class="text-decoration-none" href="./index.html"><span class="text-warning px-3 fw-bold font-change ">Fiesta Tour</span></a>
+         </div>
+                
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
